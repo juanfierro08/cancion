@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doma - Karaoke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay" id="startOverlay">
+        <div class="title-container">
+            <h1 class="main-title"><span class="misterio">misterio</span><span class="d-letter">D</span>oma</h1>
+            <p class="subtitle">Misterio de Mujer</p>
+        </div>
+        <button id="startBtn">▶ Comenzar</button>
+    </div>
+
+    <audio id="audioPlayer" src="doma.mp3" preload="auto"></audio>
+
+    <div class="karaoke-container" id="karaokeContainer">
+        <!-- Lines will be injected here by JS -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
