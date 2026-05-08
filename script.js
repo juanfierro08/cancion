@@ -103,10 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.classList.add('hidden');
         audioPlayer.play().catch(e => console.log("Audio no encontrado o bloqueado:", e));
         
-        // Empezar el karaoke ligeramente después
-        setTimeout(() => {
-            playKaraoke();
-        }, 800);
+        // Empezar el karaoke al mismo tiempo que el audio
+        playKaraoke();
     });
 
     function playKaraoke() {
